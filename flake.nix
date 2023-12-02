@@ -21,6 +21,7 @@
         in
         pkgs.devshell.mkShell {
           imports = [ (pkgs.devshell.importTOML ./devshell.toml) ];
+          packages = [ pkgs.deno ];
         };
     });
 }
